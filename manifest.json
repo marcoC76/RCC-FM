@@ -13,7 +13,7 @@
         "short_name": "Ayuda",
         "description": "Ver la ayuda del reporte",
         "url": "/ayuda.html?utm_source=homescreen",
-        "icons": [{ "src": "/icons/feed.png", "sizes": "192x192" }]
+        "icons": [{ "src": "/images/icon-128x128.png", "sizes": "192x192" }]
       }], 
   "icons": [
     {
