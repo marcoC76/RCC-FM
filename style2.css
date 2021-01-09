@@ -1,3 +1,6 @@
+
+
+
 #canvas {
   position: fixed;
   
@@ -85,5 +88,5 @@ nav {
 
 .txtRango{
   font-size: 1em;
-  color:white;
+  /* color:white; */
 }

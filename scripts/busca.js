@@ -124,12 +124,13 @@ function recibir() {
                         <img class="animal " id="clan1" src="images/animales/${newArray[0].EQUIPO}.png" width="15%" onclick="clanInfo();"/>
                         
                         <div onclick="mundoInfo();" id="mundoActual" class="cost">
+                        
                             Mundo ${localStorage.getItem("mundo")}
                         </div>
                         <div class="image">
                             <img id="avatar" src="" width="100%">
                         </div>
-                        <div id="stilo" class="nick" style="color:white; text-align:center;font-size: 1.5em; background-image:url(${stil});">
+                        <div id="stilo" class="nick" style="text-align:center;font-size: 1.5em; background-image:url(${stil});">
                             ${newArray[0].NICK.substring(0,10)}
                         </div>
                         <br>
@@ -140,7 +141,7 @@ function recibir() {
                             Resumen: <hr>
                             <canvas id="resumen" width="100%" height="70hv"></canvas>
                         </div>
-                        <div class="insignias">Insignias conseguidas: <hr>
+                        <div class="insignias">Tus monstruos: <hr>
                             <center id="centro">
                                 <img onclick="cuestInfo();" id="cuest" title="Misión cuestionarios" src="images/sinInsgCuest.png" />
                                 <img onclick="actInfo();" id="act" title="Misión actividades" src="images/sinInsgAct.png" />
@@ -193,7 +194,7 @@ function recibir() {
 
                             <div id="stilo1" class="abilities" style="background-image:url(${stil});">
                             
-                            <h2 id="nic" style="color:white;" >
+                            <h2 id="nic" style="" >
                             
                                 ${newArray[0].NICK.substring(0,10)}
                             </h2>
@@ -433,39 +434,125 @@ function recibir() {
     document.getElementById("txtRango").innerHTML = txtRango;
 
 
+    /* insignias => monstruo */
 
     var act = "";
-    if (newArray[0].PROMACT == 10) {
-        act = "images/insignia6.png";
-    } else {
-        act = "images/Huevo_002.png";
+    if (newArray[0].PROMACT < 6) {
+        act = "images/Huevo_001.png";
+    } else if (newArray[0].PROMACT < 8 && localStorage.getItem("mundo") == 1) {
+        act = "images/fmon_1-1.png";
+    } else if (newArray[0].PROMACT < 8 && localStorage.getItem("mundo") == 2) {
+        act = "images/fmon_6-1.png";
+    } else if (newArray[0].PROMACT < 8 && localStorage.getItem("mundo") == 3) {
+        act = "images/fmon_11-1.png";
+    } else if (newArray[0].PROMACT < 10 && localStorage.getItem("mundo") == 1) {
+        act = "images/fmon_1-2.png";
+    } else if (newArray[0].PROMACT < 10 && localStorage.getItem("mundo") == 2) {
+        act = "images/fmon_6-2.png";
+    } else if (newArray[0].PROMACT < 10 && localStorage.getItem("mundo") == 3) {
+        act = "images/fmon_11-2.png";
+    } else if (newArray[0].PROMACT == 10 && localStorage.getItem("mundo") == 1) {
+        act = "images/fmon_1-3.png";
+    } else if (newArray[0].PROMACT == 10 && localStorage.getItem("mundo") == 2) {
+        act = "images/fmon_6-3.png";
+    } else if (newArray[0].PROMACT == 10 && localStorage.getItem("mundo") == 3) {
+        act = "images/fmon_11-3.png";
     }
+    /*  var act = "";
+     if (newArray[0].PROMACT == 10) {
+         act = "images/fmon_1-1.png";
+     } else {
+         act = "images/Huevo_002.png";
+     } */
     document.getElementById("act").src = act;
     document.getElementById("act1").src = act;
 
     var cuest = "";
-    if (newArray[0].PROMCUES == 10) {
-        cuest = "images/insignia13.png";
+    /* if (newArray[0].PROMCUES == 10) {
+        cuest = "images/fmon_2-1.png";
     } else {
         cuest = "images/Huevo_001.png";
+    } */
+    if (newArray[0].PROMCUES < 6) {
+        cuest = "images/Huevo_002.png";
+    } else if (newArray[0].PROMCUES < 8 && localStorage.getItem("mundo") == 1) {
+        cuest = "images/fmon_2-1.png";
+    } else if (newArray[0].PROMCUES < 8 && localStorage.getItem("mundo") == 2) {
+        cuest = "images/fmon_7-1.png";
+    } else if (newArray[0].PROMCUES < 8 && localStorage.getItem("mundo") == 3) {
+        cuest = "images/fmon_12-1.png";
+    } else if (newArray[0].PROMCUES < 10 && localStorage.getItem("mundo") == 1) {
+        cuest = "images/fmon_2-2.png";
+    } else if (newArray[0].PROMCUES < 10 && localStorage.getItem("mundo") == 2) {
+        cuest = "images/fmon_7-2.png";
+    } else if (newArray[0].PROMCUES < 10 && localStorage.getItem("mundo") == 3) {
+        cuest = "images/fmon_12-2.png";
+    } else if (newArray[0].PROMCUES == 10 && localStorage.getItem("mundo") == 1) {
+        cuest = "images/fmon_2-3.png";
+    } else if (newArray[0].PROMCUES == 10 && localStorage.getItem("mundo") == 2) {
+        cuest = "images/fmon_7-3.png";
+    } else if (newArray[0].PROMCUES == 10 && localStorage.getItem("mundo") == 3) {
+        cuest = "images/fmon_12-3.png";
     }
     document.getElementById("cuest").src = cuest;
     document.getElementById("cuest1").src = cuest;
 
     var bit = "";
-    if (newArray[0].BITACORA == 10) {
-        bit = "images/insgBit.png";
+    /* if (newArray[0].BITACORA == 10) {
+        bit = "images/fmon_3-1.png";
     } else {
         bit = "images/Huevo_003.png";
+    } */
+    if (newArray[0].BITACORA < 6) {
+        bit = "images/Huevo_003.png";
+    } else if (newArray[0].BITACORA < 8  && localStorage.getItem("mundo") == 1) {
+        bit = "images/fmon_3-1.png";
+    } else if (newArray[0].BITACORA < 8  && localStorage.getItem("mundo") == 2) {
+        bit = "images/fmon_8-1.png";
+    } else if (newArray[0].BITACORA < 8  && localStorage.getItem("mundo") == 3) {
+        bit = "images/fmon_13-1.png";
+    } else if (newArray[0].BITACORA < 10  && localStorage.getItem("mundo") == 1) {
+        bit = "images/fmon_3-2.png";
+    } else if (newArray[0].BITACORA < 10  && localStorage.getItem("mundo") == 2) {
+        bit = "images/fmon_8-2.png";
+    } else if (newArray[0].BITACORA < 10  && localStorage.getItem("mundo") == 3) {
+        bit = "images/fmon_13-2.png";
+    } else if (newArray[0].BITACORA == 10  && localStorage.getItem("mundo") == 1) {
+        bit = "images/fmon_3-3.png";
+    } else if (newArray[0].BITACORA == 10  && localStorage.getItem("mundo") == 2) {
+        bit = "images/fmon_8-3.png";
+    } else if (newArray[0].BITACORA == 10  && localStorage.getItem("mundo") == 3) {
+        bit = "images/fmon_13-3.png";
     }
     document.getElementById("bit").src = bit;
     document.getElementById("bit1").src = bit;
 
     var pro = "";
-    if (newArray[0].PROYECTO == 10) {
-        pro = "images/insignia12.png";
+    /* if (newArray[0].PROYECTO == 10) {
+        pro = "images/fmon_4-1.png";
     } else {
         pro = "images/Huevo_004.png";
+    } */
+    if (newArray[0].PROYECTO < 6) {
+        pro = "images/Huevo_004.png";
+    } else if (newArray[0].PROYECTO < 8 && localStorage.getItem("mundo") == 1) {
+        pro = "images/fmon_4-1.png";
+    } else if (newArray[0].PROYECTO < 8 && localStorage.getItem("mundo") == 2) {
+        pro = "images/fmon_9-1.png";
+    } else if (newArray[0].PROYECTO < 8 && localStorage.getItem("mundo") == 3) {
+        pro = "images/fmon_14-1.png";
+    } else if (newArray[0].PROYECTO < 10 && localStorage.getItem("mundo") == 1) {
+        pro = "images/fmon_4-2.png";
+    } else if (newArray[0].PROYECTO < 10 && localStorage.getItem("mundo") == 2) {
+        pro = "images/fmon_9-2.png";
+    } else if (newArray[0].PROYECTO < 10 && localStorage.getItem("mundo") == 3) {
+        pro = "images/fmon_14-2.png";
+    } else if (newArray[0].PROYECTO == 10 && localStorage.getItem("mundo") == 1) {
+        pro = "images/fmon_4-3.png";
+    } else if (newArray[0].PROYECTO == 10 && localStorage.getItem("mundo") == 2) {
+        pro = "images/fmon_9-3.png";
+    } else if (newArray[0].PROYECTO == 10 && localStorage.getItem("mundo") == 3) {
+        pro = "images/fmon_14-3.png";
     }
     document.getElementById("pro").src = pro;
     document.getElementById("pro1").src = pro;
@@ -481,12 +568,29 @@ function recibir() {
     var por = "";
     var por1 = "";
     var mas = "";
-    if (newArray[0].PUNTOEX == 1) {
-        mas = "images/insignia1.png";
+
+    if (newArray[0].PUNTOEX == 1 && localStorage.getItem("mundo") == 1) {
+        mas = "images/fmon_5-1.png";
         por = "1";
         por1 = "X1";
-    } else if (newArray[0].PUNTOEX == 2) {
-        mas = "images/insignia1.png";
+    } else if (newArray[0].PUNTOEX == 2 && localStorage.getItem("mundo") == 1) {
+        mas = "images/fmon_5-3.png";
+        por = "2";
+        por1 = "X2";
+    }if (newArray[0].PUNTOEX == 1 && localStorage.getItem("mundo") == 2) {
+        mas = "images/fmon_10-1.png";
+        por = "1";
+        por1 = "X1";
+    } else if (newArray[0].PUNTOEX == 2 && localStorage.getItem("mundo") == 2) {
+        mas = "images/fmon_10-3.png";
+        por = "2";
+        por1 = "X2";
+    }if (newArray[0].PUNTOEX == 1 && localStorage.getItem("mundo") == 3) {
+        mas = "images/fmon_15-1.png";
+        por = "1";
+        por1 = "X1";
+    } else if (newArray[0].PUNTOEX == 2 && localStorage.getItem("mundo") == 3) {
+        mas = "images/fmon_15-3.png";
         por = "2";
         por1 = "X2";
     } else {
