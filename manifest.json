@@ -12,8 +12,8 @@
         "name": "Ayuda",
         "short_name": "Ayuda",
         "description": "Ver la ayuda del reporte",
-        "url": "/ayuda?utm_source=homescreen",
-        "icons": [{ "src": "images/icon-128x128.png", "sizes": "192x192" }]
+        "url": "/RCC-FM/ayuda?utm_source=homescreen",
+        "icons": [{ "src": "images/icon-128x128.png", "sizes": "128x128" }]
       }], 
   "icons": [
     {
