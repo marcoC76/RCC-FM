@@ -140,7 +140,7 @@ body {
 }
 
 .ayuda {
-  color: black;
+  color: white;
   opacity: 0;
   animation: anima 1s forwards 2.5s ease;
 }
@@ -181,7 +181,7 @@ p {
   /* background: linear-gradient(135deg, rgba(96, 96, 96, 0.03) 0%, rgba(96, 96, 96, 0.03) 47%, rgba(31, 31, 31, 0.03) 47%, rgba(31, 31, 31, 0.03) 100%), linear-gradient(90deg, rgba(105, 105, 105, 0.05) 0%, rgba(105, 105, 105, 0.05) 50%, rgba(155, 155, 155, 0.05) 50%, rgba(155, 155, 155, 0.05) 100%), linear-gradient(45deg, rgba(90, 90, 90, 0.02) 0%, rgba(90, 90, 90, 0.02) 81%, rgba(202, 202, 202, 0.02) 81%, rgba(202, 202, 202, 0.02) 100%), linear-gradient(45deg, rgba(2, 2, 2, 0.02) 0%, rgba(2, 2, 2, 0.02) 32%, rgba(173, 173, 173, 0.02) 32%, rgba(173, 173, 173, 0.02) 100%), linear-gradient(0deg, rgba(16, 16, 16, 0.09) 0%, rgba(16, 16, 16, 0.09) 46%, rgba(145, 145, 145, 0.09) 46%, rgba(145, 145, 145, 0.09) 100%), linear-gradient(90deg, rgba(43, 43, 43, 0.03) 0%, rgba(43, 43, 43, 0.03) 93%, rgba(139, 139, 139, 0.03) 93%, rgba(139, 139, 139, 0.03) 100%), linear-gradient(90deg, rgba(166, 166, 166, 0.08) 0%, rgba(166, 166, 166, 0.08) 32%, rgba(250, 250, 250, 0.08) 32%, rgba(250, 250, 250, 0.08) 100%), linear-gradient(90deg, rgb(0, 0, 0), rgb(44, 43, 43));
   background-size: 110%; */
   /* background: linear-gradient(to left, #272b28 0%,#272b28 50%,#272b28 50%,#3e3e3e 50%,#3e3e3e 100%); */
-  background: rgba(255, 255, 255, 0.20);
+  background: rgba(0, 0, 0, 0.527);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(8.5px);
   -webkit-backdrop-filter: blur(8.5px);
@@ -196,6 +196,7 @@ p {
   transition: all ease-out .5s;
   opacity: 0;
   animation: llega-izq 0.7s forwards 0.5s ease-in;
+  color: white;
 }
 
 
@@ -390,7 +391,7 @@ p {
 
 .name1 {
   font-size: 1.2em;
-  color: black;
+  color: rgb(255, 255, 255);
   width: 75%;
   position: relative;
   padding: 0;
@@ -400,7 +401,7 @@ p {
 .name {
   font-size: 1.15em;
   font-weight: bold;
-  color: black;
+  color: rgb(255, 255, 255);
   width: 75%;
   position: relative;
   padding: 0;
@@ -420,7 +421,7 @@ p {
   top: -1%;
   font-weight: bold;
   font-size: 1.5em;
-  color: black;
+  color: white;
   vertical-align: middle;
 }
 
@@ -436,7 +437,7 @@ p {
   top: -1%;
   font-weight: bold;
   font-size: 1.5em;
-  color: black;
+  color: white;
   vertical-align: middle;
 }
 
@@ -484,7 +485,7 @@ p {
   background-size: 70%;
   background-repeat: no-repeat;
   background-position: -5% -5%;
- 
+
 
 }
 
@@ -548,15 +549,15 @@ p {
   opacity: 0;
   font-family: poke;
   font-size: 0.7em;
-  font-weight: bolder;
+  font-weight: normal;
   margin-bottom: 5%;
-  color: black;
+  color: white;
   animation: llega-izq 1.7s forwards 0.2s ease-in;
 }
 
 .abilities {
   /* background: rgba(255, 255, 255, .3); */
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.253);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(11.0px);
   -webkit-backdrop-filter: blur(11.0px);
@@ -580,11 +581,11 @@ p {
 
 .insignias {
   /* background-color: rgba(255, 255, 255, .3); */
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.315);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(11.0px);
   -webkit-backdrop-filter: blur(11.0px);
-  color: black;
+  color: white;
   font-weight: bold;
   text-align: left;
   font-size: 1em;
@@ -640,7 +641,7 @@ p {
 }
 
 .abilities li {
-  color: black;
+  color: white;
   padding: 8px 0;
   font-size: 14px;
   border-bottom: solid 1px rgba(255, 2552, 255, .2);
@@ -663,7 +664,7 @@ p {
   position: absolute;
   bottom: 0px;
   font-weight: bold;
-  /* color: rgb(255, 255, 255); */
+  color: rgb(255, 255, 255);
   font-size: 1.5em;
 
 }
@@ -742,7 +743,13 @@ canvas {
 }
 
 .topnav {
-  background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(255, 255, 255, 0));
+  /* background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(255, 255, 255, 0)); */
+  background: rgba(0, 0, 0, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7.0px);
+  -webkit-backdrop-filter: blur(7.0px);
+  border-radius: 0 0 10px 10px;
+  /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
   position: fixed;
   /* Set the navbar to fixed position */
   top: 0;
@@ -798,7 +805,7 @@ canvas {
   margin-top: 6%;
   margin-bottom: 6%;
   font-size: 4em;
-  color: black;
+  color: white;
   opacity: 0;
   animation: anima 1s forwards 3s ease;
 }
@@ -863,8 +870,14 @@ input[type=password] {
   text-align: center;
   width: 65%;
   box-sizing: border-box;
-  background-color: #272b28;
-  border: solid 10px #000000;
+  background: rgba(0, 0, 0, 0.596);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7.0px);
+  -webkit-backdrop-filter: blur(7.0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  /* background-color: #272b28;
+  border: solid 10px #000000; */
   font-size: 2em;
   background-image: url('images/glass.png');
   background-position: 10px 5px;
@@ -1281,7 +1294,7 @@ input[type=password]:focus {
 .letter {
   font-size: 90%;
   font-weight: bold;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   position: absolute;
   left: 0;
   right: 0;
