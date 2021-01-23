@@ -111,8 +111,9 @@ function recibir() {
     var stil = "images/stilos/" + newArray[0].ESTILO + "2.png";
 
     salida = `
+    
                 <br>
-                <div id="carta0" class="card no-seleccionable" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+                <div id="carta0" class="card no-seleccionable swiper-slide" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
                     <div id="cinta1">
                         
                     </div>
@@ -125,7 +126,7 @@ function recibir() {
                         
                         <div onclick="mundoInfo();" id="mundoActual" class="cost">
                         
-                            Mundo ${localStorage.getItem("mundo")}
+                            Región ${localStorage.getItem("mundo")}
                         </div>
                         <div class="image">
                             <img id="avatar" src="" width="100%">
@@ -168,7 +169,7 @@ function recibir() {
                 <br>
                 <br>
                 
-                <div id="carta"  class="card no-seleccionable" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+                <div id="carta"  class="card no-seleccionable swiper-slide" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
                         <div id="cinta2">
                             
                         </div>
@@ -178,7 +179,7 @@ function recibir() {
                         </h2>
                         
                         <div id="mundoActualDesg" onclick="mundoInfo();" class="cost">
-                            Mundo ${localStorage.getItem("mundo")}
+                            Región ${localStorage.getItem("mundo")}
                         </div>
                         
                         <center>
@@ -270,7 +271,7 @@ function recibir() {
                 <br>
                 <br>
 
-                <div  class="card no-seleccionable" id="carta2" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+                <div  class="card no-seleccionable swiper-slide" id="carta2" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
 
                     <div id="elemento2">
                         <h2 class="name">
@@ -298,7 +299,7 @@ function recibir() {
 
                 <br>
                 <br>
-                <div  class="card no-seleccionable" id="carta3" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+                <div  class="card no-seleccionable swiper-slide" id="carta3" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
 
                     <div id="elemento3">
                         <h2 class="name">
@@ -325,7 +326,7 @@ function recibir() {
                 </div>
                 <br>
                 <br>
-                <div  class="card no-seleccionable" id="carta4" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+                <div  class="card no-seleccionable swiper-slide" id="carta4" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
 
                     <div id="elemento4">
                         <h2 class="name">
@@ -355,7 +356,7 @@ function recibir() {
                 <br>
 
                 
-                <div  class="card no-seleccionable" id="carta5" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+                <div  class="card no-seleccionable swiper-slide" id="carta5" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
 
                     <div id="elemento5">
                         <h2 class="name">
