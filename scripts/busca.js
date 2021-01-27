@@ -113,7 +113,7 @@ function recibir() {
     salida = `
     
                 <br>
-                <div id="carta0" class="card no-seleccionable swiper-slide" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+                <div id="carta0" class="card no-seleccionable">
                     <div id="cinta1">
                         
                     </div>
@@ -169,7 +169,7 @@ function recibir() {
                 <br>
                 <br>
                 
-                <div id="carta"  class="card no-seleccionable swiper-slide" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+                <div id="carta"  class="card no-seleccionable" >
                         <div id="cinta2">
                             
                         </div>
@@ -271,7 +271,7 @@ function recibir() {
                 <br>
                 <br>
 
-                <div  class="card no-seleccionable swiper-slide" id="carta2" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+                <div  class="card no-seleccionable" id="carta2" >
 
                     <div id="elemento2">
                         <h2 class="name">
@@ -285,21 +285,35 @@ function recibir() {
                             <canvas  id="cuestChart" width="100%"></canvas>
                         </center>
                         <div class="abilities">
-                        <div class="meter azul">
-			                <span style="width: ${(parseInt(newArray[0].PROMCUES)*100)/10}%"></span>
-		                </div>
-                        <br>
-                        <center>
-                            <h4 class="ayuda">Nivel (promedio): <a  style="font-size:1.5em;">${newArray[0].PROMCUES}</a></h4>
-                        </center>
-                        </div>
+                            <div class="meter azul">
+                                <span style="width: ${(parseInt(newArray[0].PROMCUES)*100)/10}%"></span>
+                            </div>
+                            <br>
+                            <center>
+                                <h4 class="ayuda">Nivel (promedio): <a  style="font-size:1.5em;">${newArray[0].PROMCUES}</a></h4>
+                                
+                            </center>
+                            </div>
+                            <div class="abilities">
+                                <center>
+                                    <span class="evolution" >
+                                        <img id="fmonPro0" src="images/Huevo_001.png" />
+                                        >
+                                        <img id="fmonCuest1" src="" />
+                                        >
+                                        <img id="fmonCuest2" src="" />
+                                        >
+                                        <img id="fmonCuest3" src="" />
+                                    </span>
+                                </center>
+                            </div>
                         <div class="sheen"></div>
                     </div>
                 </div>
 
                 <br>
                 <br>
-                <div  class="card no-seleccionable swiper-slide" id="carta3" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+                <div  class="card no-seleccionable " id="carta3" >
 
                     <div id="elemento3">
                         <h2 class="name">
@@ -319,14 +333,28 @@ function recibir() {
                          <br>
                         <center>
                             <h4 class="ayuda">Nivel (promedio): <span style="font-size:1.5em">${newArray[0].PROMACT}</span></h4>
+                            
                         </center>
+                        </div>
+                        <div class="abilities">
+                            <center>
+                                <span class="evolution" >
+                                    <img id="fmonPro0" src="images/Huevo_002.png" />
+                                    >
+                                    <img id="fmonAct1" src="" />
+                                    >
+                                    <img id="fmonAct2" src="" />
+                                    >
+                                    <img id="fmonAct3" src="" />
+                                </span>
+                            </center>
                         </div>
                         <div class="sheen"></div>
                     </div>
                 </div>
                 <br>
                 <br>
-                <div  class="card no-seleccionable swiper-slide" id="carta4" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+                <div  class="card no-seleccionable " id="carta4" >
 
                     <div id="elemento4">
                         <h2 class="name">
@@ -339,15 +367,29 @@ function recibir() {
                         <center class="insignias">
                             <canvas  id="bitChart" width="50"></canvas>
                         </center>
-                        <br>
+                      
                         <div class="abilities">
                         <div class="meter morado">
 			                <span style="width: ${(parseInt(newArray[0].BITACORA)*100)/10}%"></span>
 		                </div>
-                         <br>
+                        <br>
                          <center>
                             <h4 class="ayuda">Nivel (promedio): <a  style="font-size:1.5em;">${newArray[0].BITACORA}</a></h4>
+                            
                         <center>
+                        </div>
+                        <div class="abilities">
+                            <center>
+                                <span class="evolution" >
+                                    <img id="fmonPro0" src="images/Huevo_003.png" />
+                                    >
+                                    <img id="fmonBit1" src="" />
+                                    >
+                                    <img id="fmonBit2" src="" />
+                                    >
+                                    <img id="fmonBit3" src="" />
+                                </span>
+                            </center>
                         </div>
                         <div class="sheen"></div>
                     </div>
@@ -356,7 +398,7 @@ function recibir() {
                 <br>
 
                 
-                <div  class="card no-seleccionable swiper-slide" id="carta5" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+                <div  class="card no-seleccionable " id="carta5" >
 
                     <div id="elemento5">
                         <h2 class="name">
@@ -369,15 +411,29 @@ function recibir() {
                         <center class="insignias">
                             <canvas  id="proChart" width="100%"></canvas>
                         </center>
-                        <br>
+                        
                         <div class="abilities">
                         <div class="meter caqui">
 			                <span style="width: ${(parseInt(newArray[0].PROYECTO)*100)/10}%"></span>
 		                </div>
-                       <br>
+                        <br>
                        <center>
                             <h4 class="ayuda">Nivel (promedio): <a  style="font-size:1.5em;">${newArray[0].PROYECTO}</a></h4>
+                            
                         </center>
+                        </div>
+                        <div class="abilities">
+                            <center>
+                                <span class="evolution" >
+                                    <img id="fmonPro0" src="images/Huevo_004.png" />
+                                    >
+                                    <img id="fmonPro1" src="" />
+                                    >
+                                    <img id="fmonPro2" src="" />
+                                    >
+                                    <img id="fmonPro3" src="" />
+                                </span>
+                            </center>
                         </div>
                         <div class="sheen"></div>
                     </div> 
@@ -438,20 +494,33 @@ function recibir() {
     /* insignias => monstruo */
 
     var act = "";
+
     if (newArray[0].PROMACT < 6) {
         act = "images/Huevo_001.png";
+        document.getElementById("fmonAct1").style.filter = "brightness(0%)";
+        document.getElementById("fmonAct2").style.filter = "brightness(0%)";
+        document.getElementById("fmonAct3").style.filter = "brightness(0%)";
     } else if (newArray[0].PROMACT < 8 && localStorage.getItem("mundo") == 1) {
         act = "images/fmon_1-1.png";
+        document.getElementById("fmonAct2").style.filter = "brightness(0%)";
+        document.getElementById("fmonAct3").style.filter = "brightness(0%)";
     } else if (newArray[0].PROMACT < 8 && localStorage.getItem("mundo") == 2) {
         act = "images/fmon_6-1.png";
+        document.getElementById("fmonAct2").style.filter = "brightness(0%)";
+        document.getElementById("fmonAct3").style.filter = "brightness(0%)";
     } else if (newArray[0].PROMACT < 8 && localStorage.getItem("mundo") == 3) {
         act = "images/fmon_11-1.png";
+        document.getElementById("fmonAct2").style.filter = "brightness(0%)";
+        document.getElementById("fmonAct3").style.filter = "brightness(0%)";
     } else if (newArray[0].PROMACT < 10 && localStorage.getItem("mundo") == 1) {
         act = "images/fmon_1-2.png";
+        document.getElementById("fmonAct3").style.filter = "brightness(0%)";
     } else if (newArray[0].PROMACT < 10 && localStorage.getItem("mundo") == 2) {
         act = "images/fmon_6-2.png";
+        document.getElementById("fmonAct3").style.filter = "brightness(0%)";
     } else if (newArray[0].PROMACT < 10 && localStorage.getItem("mundo") == 3) {
         act = "images/fmon_11-2.png";
+        document.getElementById("fmonAct3").style.filter = "brightness(0%)";
     } else if (newArray[0].PROMACT == 10 && localStorage.getItem("mundo") == 1) {
         act = "images/fmon_1-3.png";
     } else if (newArray[0].PROMACT == 10 && localStorage.getItem("mundo") == 2) {
@@ -468,6 +537,8 @@ function recibir() {
     document.getElementById("act").src = act;
     document.getElementById("act1").src = act;
 
+
+
     var cuest = "";
     /* if (newArray[0].PROMCUES == 10) {
         cuest = "images/fmon_2-1.png";
@@ -476,18 +547,30 @@ function recibir() {
     } */
     if (newArray[0].PROMCUES < 6) {
         cuest = "images/Huevo_002.png";
+        document.getElementById("fmonCuest1").style.filter = "brightness(0%)";
+        document.getElementById("fmonCuest2").style.filter = "brightness(0%)";
+        document.getElementById("fmonCuest3").style.filter = "brightness(0%)";
     } else if (newArray[0].PROMCUES < 8 && localStorage.getItem("mundo") == 1) {
         cuest = "images/fmon_2-1.png";
+        document.getElementById("fmonCuest2").style.filter = "brightness(0%)";
+        document.getElementById("fmonCuest3").style.filter = "brightness(0%)";
     } else if (newArray[0].PROMCUES < 8 && localStorage.getItem("mundo") == 2) {
         cuest = "images/fmon_7-1.png";
+        document.getElementById("fmonCuest2").style.filter = "brightness(0%)";
+        document.getElementById("fmonCuest3").style.filter = "brightness(0%)";
     } else if (newArray[0].PROMCUES < 8 && localStorage.getItem("mundo") == 3) {
         cuest = "images/fmon_12-1.png";
+        document.getElementById("fmonCuest2").style.filter = "brightness(0%)";
+        document.getElementById("fmonCuest3").style.filter = "brightness(0%)";
     } else if (newArray[0].PROMCUES < 10 && localStorage.getItem("mundo") == 1) {
         cuest = "images/fmon_2-2.png";
+        document.getElementById("fmonCuest3").style.filter = "brightness(0%)";
     } else if (newArray[0].PROMCUES < 10 && localStorage.getItem("mundo") == 2) {
         cuest = "images/fmon_7-2.png";
+        document.getElementById("fmonCuest3").style.filter = "brightness(0%)";
     } else if (newArray[0].PROMCUES < 10 && localStorage.getItem("mundo") == 3) {
         cuest = "images/fmon_12-2.png";
+        document.getElementById("fmonCuest3").style.filter = "brightness(0%)";
     } else if (newArray[0].PROMCUES == 10 && localStorage.getItem("mundo") == 1) {
         cuest = "images/fmon_2-3.png";
     } else if (newArray[0].PROMCUES == 10 && localStorage.getItem("mundo") == 2) {
@@ -506,23 +589,35 @@ function recibir() {
     } */
     if (newArray[0].BITACORA < 6) {
         bit = "images/Huevo_003.png";
-    } else if (newArray[0].BITACORA < 8  && localStorage.getItem("mundo") == 1) {
+        document.getElementById("fmonBit1").style.filter = "brightness(0%)";
+        document.getElementById("fmonBit2").style.filter = "brightness(0%)";
+        document.getElementById("fmonBit3").style.filter = "brightness(0%)";
+    } else if (newArray[0].BITACORA < 8 && localStorage.getItem("mundo") == 1) {
         bit = "images/fmon_3-1.png";
-    } else if (newArray[0].BITACORA < 8  && localStorage.getItem("mundo") == 2) {
+        document.getElementById("fmonBit2").style.filter = "brightness(0%)";
+        document.getElementById("fmonBit3").style.filter = "brightness(0%)";
+    } else if (newArray[0].BITACORA < 8 && localStorage.getItem("mundo") == 2) {
         bit = "images/fmon_8-1.png";
-    } else if (newArray[0].BITACORA < 8  && localStorage.getItem("mundo") == 3) {
+        document.getElementById("fmonBit2").style.filter = "brightness(0%)";
+        document.getElementById("fmonBit3").style.filter = "brightness(0%)";
+    } else if (newArray[0].BITACORA < 8 && localStorage.getItem("mundo") == 3) {
         bit = "images/fmon_13-1.png";
-    } else if (newArray[0].BITACORA < 10  && localStorage.getItem("mundo") == 1) {
+        document.getElementById("fmonBit2").style.filter = "brightness(0%)";
+        document.getElementById("fmonBit3").style.filter = "brightness(0%)";
+    } else if (newArray[0].BITACORA < 10 && localStorage.getItem("mundo") == 1) {
         bit = "images/fmon_3-2.png";
-    } else if (newArray[0].BITACORA < 10  && localStorage.getItem("mundo") == 2) {
+        document.getElementById("fmonBit3").style.filter = "brightness(0%)";
+    } else if (newArray[0].BITACORA < 10 && localStorage.getItem("mundo") == 2) {
         bit = "images/fmon_8-2.png";
-    } else if (newArray[0].BITACORA < 10  && localStorage.getItem("mundo") == 3) {
+        document.getElementById("fmonBit3").style.filter = "brightness(0%)";
+    } else if (newArray[0].BITACORA < 10 && localStorage.getItem("mundo") == 3) {
         bit = "images/fmon_13-2.png";
-    } else if (newArray[0].BITACORA == 10  && localStorage.getItem("mundo") == 1) {
+        document.getElementById("fmonBit3").style.filter = "brightness(0%)";
+    } else if (newArray[0].BITACORA == 10 && localStorage.getItem("mundo") == 1) {
         bit = "images/fmon_3-3.png";
-    } else if (newArray[0].BITACORA == 10  && localStorage.getItem("mundo") == 2) {
+    } else if (newArray[0].BITACORA == 10 && localStorage.getItem("mundo") == 2) {
         bit = "images/fmon_8-3.png";
-    } else if (newArray[0].BITACORA == 10  && localStorage.getItem("mundo") == 3) {
+    } else if (newArray[0].BITACORA == 10 && localStorage.getItem("mundo") == 3) {
         bit = "images/fmon_13-3.png";
     }
     document.getElementById("bit").src = bit;
@@ -536,18 +631,30 @@ function recibir() {
     } */
     if (newArray[0].PROYECTO < 6) {
         pro = "images/Huevo_004.png";
+        document.getElementById("fmonPro1").style.filter = "brightness(0%)";
+        document.getElementById("fmonPro2").style.filter = "brightness(0%)";
+        document.getElementById("fmonPro3").style.filter = "brightness(0%)";
     } else if (newArray[0].PROYECTO < 8 && localStorage.getItem("mundo") == 1) {
         pro = "images/fmon_4-1.png";
+        document.getElementById("fmonPro2").style.filter = "brightness(0%)";
+        document.getElementById("fmonPro3").style.filter = "brightness(0%)";
     } else if (newArray[0].PROYECTO < 8 && localStorage.getItem("mundo") == 2) {
         pro = "images/fmon_9-1.png";
+        document.getElementById("fmonPro2").style.filter = "brightness(0%)";
+        document.getElementById("fmonPro3").style.filter = "brightness(0%)";
     } else if (newArray[0].PROYECTO < 8 && localStorage.getItem("mundo") == 3) {
         pro = "images/fmon_14-1.png";
+        document.getElementById("fmonPro2").style.filter = "brightness(0%)";
+        document.getElementById("fmonPro3").style.filter = "brightness(0%)";
     } else if (newArray[0].PROYECTO < 10 && localStorage.getItem("mundo") == 1) {
         pro = "images/fmon_4-2.png";
+        document.getElementById("fmonPro3").style.filter = "brightness(0%)";
     } else if (newArray[0].PROYECTO < 10 && localStorage.getItem("mundo") == 2) {
         pro = "images/fmon_9-2.png";
+        document.getElementById("fmonPro3").style.filter = "brightness(0%)";
     } else if (newArray[0].PROYECTO < 10 && localStorage.getItem("mundo") == 3) {
         pro = "images/fmon_14-2.png";
+        document.getElementById("fmonPro3").style.filter = "brightness(0%)";
     } else if (newArray[0].PROYECTO == 10 && localStorage.getItem("mundo") == 1) {
         pro = "images/fmon_4-3.png";
     } else if (newArray[0].PROYECTO == 10 && localStorage.getItem("mundo") == 2) {
@@ -578,7 +685,8 @@ function recibir() {
         mas = "images/fmon_5-3.png";
         por = "2";
         por1 = "X2";
-    }if (newArray[0].PUNTOEX == 1 && localStorage.getItem("mundo") == 2) {
+    }
+    if (newArray[0].PUNTOEX == 1 && localStorage.getItem("mundo") == 2) {
         mas = "images/fmon_10-1.png";
         por = "1";
         por1 = "X1";
@@ -586,7 +694,8 @@ function recibir() {
         mas = "images/fmon_10-3.png";
         por = "2";
         por1 = "X2";
-    }if (newArray[0].PUNTOEX == 1 && localStorage.getItem("mundo") == 3) {
+    }
+    if (newArray[0].PUNTOEX == 1 && localStorage.getItem("mundo") == 3) {
         mas = "images/fmon_15-1.png";
         por = "1";
         por1 = "X1";
@@ -598,10 +707,71 @@ function recibir() {
         mas = "images/Huevo_005.png";
         document.getElementById("por").style.display = "none";
     }
+
     document.getElementById("por").innerHTML = por;
     document.getElementById("por1").innerHTML = por1;
     document.getElementById("mas").src = mas;
     document.getElementById("mas1").src = mas;
+
+
+    /* lineas evolutivas */
+    var fmonAct1, fmonAct2, fmonAct3, fmonCuest1, fmonCuest2, fmonCuest3, fmonBit1, fmonBit2, fmonBit3, fmonPro1, fmonPro2, fmonPro3 = "";
+    if (localStorage.getItem("mundo") == 1) {
+        fmonAct1 = "images/fmon_1-1.png";
+        fmonAct2 = "images/fmon_1-2.png";
+        fmonAct3 = "images/fmon_1-3.png";
+        fmonCuest1 = "images/fmon_2-1.png";
+        fmonCuest2 = "images/fmon_2-2.png";
+        fmonCuest3 = "images/fmon_2-3.png";
+        fmonBit1 = "images/fmon_3-1.png";
+        fmonBit2 = "images/fmon_3-2.png";
+        fmonBit3 = "images/fmon_3-3.png";
+        fmonPro1 = "images/fmon_4-1.png";
+        fmonPro2 = "images/fmon_4-2.png";
+        fmonPro3 = "images/fmon_4-3.png";
+    } else
+    if (localStorage.getItem("mundo") == 2) {
+        fmonAct1 = "images/fmon_6-1.png";
+        fmonAct2 = "images/fmon_6-2.png";
+        fmonAct3 = "images/fmon_6-3.png";
+        fmonCuest1 = "images/fmon_7-1.png";
+        fmonCuest2 = "images/fmon_7-2.png";
+        fmonCuest3 = "images/fmon_7-3.png";
+        fmonBit1 = "images/fmon_8-1.png";
+        fmonBit2 = "images/fmon_8-2.png";
+        fmonBit3 = "images/fmon_8-3.png";
+        fmonPro1 = "images/fmon_9-1.png";
+        fmonPro2 = "images/fmon_9-2.png";
+        fmonPro3 = "images/fmon_9-3.png";
+    } else
+    if (localStorage.getItem("mundo") == 3) {
+        fmonAct1 = "images/fmon_11-1.png";
+        fmonAct2 = "images/fmon_11-2.png";
+        fmonAct3 = "images/fmon_11-3.png";
+        fmonCuest1 = "images/fmon_12-1.png";
+        fmonCuest2 = "images/fmon_12-2.png";
+        fmonCuest3 = "images/fmon_12-3.png";
+        fmonBit1 = "images/fmon_13-1.png";
+        fmonBit2 = "images/fmon_13-2.png";
+        fmonBit3 = "images/fmon_13-3.png";
+        fmonPro1 = "images/fmon_14-1.png";
+        fmonPro2 = "images/fmon_14-2.png";
+        fmonPro3 = "images/fmon_14-3.png";
+    }
+
+    document.getElementById("fmonAct1").src = fmonAct1;
+    document.getElementById("fmonAct2").src = fmonAct2;
+    document.getElementById("fmonAct3").src = fmonAct3;
+    document.getElementById("fmonCuest1").src = fmonCuest1;
+    document.getElementById("fmonCuest2").src = fmonCuest2;
+    document.getElementById("fmonCuest3").src = fmonCuest3;
+    document.getElementById("fmonBit1").src = fmonBit1;
+    document.getElementById("fmonBit2").src = fmonBit2;
+    document.getElementById("fmonBit3").src = fmonBit3;
+    document.getElementById("fmonPro1").src = fmonPro1;
+    document.getElementById("fmonPro2").src = fmonPro2;
+    document.getElementById("fmonPro3").src = fmonPro3;
+
     var backgroundColor = '#062e6b80';
     var borderColor = '#0042A6';
     var pointBackgroundColor = '#0a58ce';
@@ -649,6 +819,7 @@ function recibir() {
     });
 
     if (localStorage.getItem("mundo") == 1) {
+
         var ctx = document.getElementById("actChart");
         var actChart = new Chart(ctx, {
             type: 'bar',
@@ -976,7 +1147,8 @@ function recibir() {
 
     var caracter = "";
     if (localStorage.getItem("mundo") == 1) {
-        animaHover = ""
+
+        animaHover = "";
         switch (newArray[0].AVATAR) {
             case 1:
                 /* caracter = "images/avatarAnimado.gif"; */
